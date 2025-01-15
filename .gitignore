@@ -1,2 +1,9 @@
 # Project exclude paths
 /Lesson1/.gradle/
+# Project exclude paths
+/Lab1/.gradle/
+/Lab1/build/
+/Lab1/build/classes/kotlin/main/
+/Lab1/build/classes/kotlin/test/
+/Lesson1/build/
+/Lesson1/build/classes/kotlin/main/
