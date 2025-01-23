@@ -2,17 +2,18 @@ import org.junit.jupiter.api.Test
 import kotlin.math.abs
 import kotlin.math.sqrt
 
-internal class ComplexTest {
+internal class ActualComplexTest {
+
     @Test
     fun testConstructor1() {
         val a = Complex(1.0, 2.0)
-        assert(((a.real / 1.0 - 1.0) < EPS) && ((a.imaginary / 2.0 - 1.0) < EPS))
+        assert(((a.real/1.0 - 1.0) < EPS) && ((a.imaginary/2.0 - 1.0) < EPS))
     }
 
     @Test
     fun testConstructor2() {
         val a = Complex(1, 2)
-        assert((abs(a.real / 1.0 - 1.0) < EPS) && (abs(a.imaginary / 2.0 - 1.0) < EPS))
+        assert((abs(a.real/1.0 - 1.0) < EPS) && (abs(a.imaginary/2.0 - 1.0) < EPS))
     }
 
     @Test
@@ -75,6 +76,4 @@ internal class ComplexTest {
         val a = Complex(1,1)
         assert(abs(a.abs - sqrt(2.0)) < EPS)
     }
-
-
 }
