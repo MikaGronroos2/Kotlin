@@ -5,7 +5,6 @@ fun guessedNumbers(s: String?): List<Int>? {
     return parsedString?.split(",")?.mapNotNull { it.toIntOrNull() }
 }
 
-// DONE but check with the teacher if you could use MutableListOf in the Program
 fun isLegalGuess(guess: List<Int>?): Boolean{
     val listOfWrongItems = mutableListOf<Int>()
 
